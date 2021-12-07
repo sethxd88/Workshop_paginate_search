@@ -140,4 +140,53 @@ body {
 .styled-table tbody a:hover {
   color: #ed2b4f;
 }
-/*# sourceMappingURL=main.css.map */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.backpage {
+  color: #ed2b4f;
+}
+
+.nextpage {
+  color: #ed2b4f;
+}
+
+.pagination span {
+  margin: 0 10px;
+  width: 23px;
+  text-align: center;
+  cursor: pointer;
+  padding: 2px 0;
+  border-radius: 5px;
+}
+
+.pagenation-block {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  background-color: #ed2b4f;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px
+}
+
+footer > p {
+  color: white;
+  text-align: center;
+}
+
+.active {
+  color: white;
+  background-color: #ed2b4f;
+}
+
+.disabled {
+  visibility: hidden;
+} 
