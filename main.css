@@ -176,7 +176,7 @@ footer > p {
   text-align: center;
 }
 
-/* 讓上下頁消失 */
+/* 讓上下頁按鈕消失 */
 .disabled {
   display: none;
 } 
