@@ -116,36 +116,44 @@ body {
   color: #ed2b4f;
 }
 
-.pagination {
+.pagination-container {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
 }
 
-.backpage {
+.back-page {
   color: #ed2b4f;
 }
 
-.nextpage {
+.next-page {
   color: #ed2b4f;
 }
 
-.pagination > span {
+.pagination-container > span {
   margin: 0 10px;
   width: 23px;
   text-align: center;
   cursor: pointer;
   padding: 2px 0;
-  border-radius: 5px;
 }
 
-.pagination-block {
+.pagination {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.pagination > span {
+  margin: 0 8px;
+  cursor: pointer;
 }
 
 .pagination-counter {
-  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  margin-left: 20px;
+  align-items: center;
 }
 
 footer {
@@ -159,11 +167,16 @@ footer > p {
   text-align: center;
 }
 
+/* 讓當前的頁碼亮起來 */
 .active {
   color: white;
   background-color: #ed2b4f;
+  border-radius: 5px;
+  width: 30px;
+  text-align: center;
 }
 
+/* 讓上下頁消失 */
 .disabled {
-  visibility: hidden;
+  display: none;
 } 
