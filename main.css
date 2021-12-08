@@ -1,35 +1,10 @@
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 body {
   background: #F2F2F2;
   margin: 0;
   font-family: 'Poppins';
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .navbar {
@@ -97,7 +72,7 @@ body {
 }
 
 .styled-table {
-  width: 100%;
+  width: 95%;
   max-width: 1240px;
   border-collapse: collapse;
   margin: 3em auto;
@@ -144,6 +119,7 @@ body {
 .pagination {
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
 .backpage {
@@ -154,7 +130,7 @@ body {
   color: #ed2b4f;
 }
 
-.pagination span {
+.pagination > span {
   margin: 0 10px;
   width: 23px;
   text-align: center;
@@ -163,18 +139,19 @@ body {
   border-radius: 5px;
 }
 
-.pagenation-block {
+.pagination-block {
   display: flex;
   justify-content: center;
+}
+
+.pagination-counter {
+  margin-left: 10px;
 }
 
 footer {
   background-color: #ed2b4f;
   height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 50px
+  margin-top: auto;
 }
 
 footer > p {
